@@ -5,4 +5,11 @@ php artisan migrate
 
 php artisan make:model Question --migration
 php artisan migrate
+
+php artisan make:factory QuestionFactory
+
+php artisan tinket
+>>> factory(App\User::class, 3)->create();
+
+php artisan migrate:fresh --seed
 ```

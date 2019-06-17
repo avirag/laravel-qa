@@ -17,3 +17,10 @@ php artisan make:controller QuestionsController --resource --model=Question
 
 php artisan vendor:publish --tag=laravel-pagination
 ```
+Debug
+```
+$ composer require barryvdh/laravel-debugbar --dev
+
+\DB::enableQueryLog();
+dd(\DB::getQueryLog());
+```

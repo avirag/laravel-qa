@@ -8,7 +8,7 @@ php artisan migrate
 
 php artisan make:factory QuestionFactory
 
-php artisan tinket
+php artisan tinker
 >>> factory(App\User::class, 3)->create();
 
 php artisan migrate:fresh --seed
@@ -16,6 +16,8 @@ php artisan migrate:fresh --seed
 php artisan make:controller QuestionsController --resource --model=Question
 
 php artisan vendor:publish --tag=laravel-pagination
+
+php artisan make:request AskQuestionRequest
 ```
 Debug
 ```
